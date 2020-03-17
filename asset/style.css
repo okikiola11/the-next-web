@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-wrapper-1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    font-size: 1.3rem;
+    padding: 3px 20px 0 15px;
+    width: 100%;
+    border: 1px solid #000000;
+}
+
+.header-wrapper-1 nav {
+    padding: 5px;
+    color: rgb(255, 255, 255, 0.6);
+}
+
+.header-wrapper-1 nav ul,
+.header-wrapper-2 nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header-wrapper-1 nav ul li,
+.header-wrapper-2 nav ul li {
+    display: inline;
+    padding-left: 10px;
+}
+
+.header-wrapper-2 {
+    width: 100%;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    font-size: 1.3rem;
+    padding: 6px 20px 6px 20px;
+    text-transform: uppercase;
+    line-height: 1.6;
+    color: #aaaaaa;
+}
+
+.header-wrapper-3 {
+    width: 100%;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1c40f;
+    font-size: 1.4rem;
+    padding: 6px 0 6px 29px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+.header-wrapper-1 nav ul li:first-child {
+    color: #ffffff;
+}
+/*============================= 
+Small devices (portrait tablets and large phones, 600px and up) 
+===============================*/
+@media only screen and (min-width: 600px) {
+    .head {
+        background-color: yellow;
+    }
+}
+
+/*============================= 
+Medium devices (landscape tablets, 768px and up) 
+===============================*/
+@media only screen and (min-width: 768px) {
+    .head {
+        background-color: brown;
+    }
+}
+
+/*============================= 
+Large devices (laptops/desktops, 992px and up) 
+===============================*/
+@media only screen and (min-width: 992px) {
+    .head {
+        background-color: red;
+    }
+}
+
+/*============================= 
+Extra large devices (large laptops and desktops, 1200px and up) 
+===============================*/
+@media only screen and (min-width: 1200px) {
+    .head {
+        background-color: black;
+    }
+}
