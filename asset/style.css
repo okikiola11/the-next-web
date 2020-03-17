@@ -75,6 +75,23 @@ html {
 .clear {
     clear: both;
 }
+
+/* Main section: Highlights*/
+
+.highlights {
+    display: flex;
+    flex-flow: column wrap;
+    border: 1px solid red;
+    width: 100%;
+    min-height: 738px;
+}
+
+.high-1, .high-2, .high-3 {
+    border: 1px solid green;
+    width: 100%;
+    min-height: 238px;
+    margin: 5px 0;
+}
 /*============================= 
 Small devices (portrait tablets and large phones, 600px and up) 
 ===============================*/
@@ -91,6 +108,25 @@ Small devices (portrait tablets and large phones, 600px and up)
         background-color: green;
         /* display: none; */
     }
+
+    /* Main section: Highlights*/
+
+    .highlights {
+        display: flex;
+        flex-flow: column wrap;
+        border: 1px solid red;
+        width: 100%;
+        min-height: 738px;
+    }
+
+    .high-1, .high-2, .high-3 {
+        border: 1px solid green;
+        width: 100%;
+        min-height: 238px;
+        margin: 5px 0;
+    }
+    
+    
     
 }
 
@@ -166,6 +202,49 @@ Medium devices (landscape tablets, 768px and up)
     .header-wrapper-1 nav ul li:first-child {
         color: #ffffff;
     }
+
+    /* Main section: Highlights*/
+
+    .highlights {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height: 480px;
+    }
+
+    .high-left {
+        border: 1px solid green;
+        max-height: 480px;
+        width: 55%;
+        margin: 5px;
+    }
+
+    .high-right {
+        max-height: 480px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .high-2 {
+        display: flex;
+        border: 1px solid black;
+        width: 100%;
+        height: 45%;
+        margin-bottom: 5px;
+    }
+
+    .high-3 {
+        display: flex;
+        border: 1px solid black;
+        width: 100%;
+        height: 50%;
+        margin-top: 5px;
+    }
+
+
+    
 }
 
 /*============================= 
