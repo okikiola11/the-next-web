@@ -84,6 +84,8 @@ html {
     border: 1px solid red;
     width: 100%;
     min-height: 738px;
+
+    
 }
 
 .high-1, .high-2, .high-3 {
@@ -91,6 +93,43 @@ html {
     width: 100%;
     min-height: 238px;
     margin: 5px 0;
+    color: #ffffff;
+    
+}
+
+.high-1 {
+    background-image: url(/asset/images/brainstorm-1-796x417.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    position: relative;
+    
+}
+
+.highlights a {
+    text-decoration: none;
+    color: white;
+}
+
+.highlights ul {
+    list-style: none;
+    display: flex;
+}
+
+.highlights li {
+    color: #A19B9B;
+}
+
+.highlights li a {
+    color: #A19B9B;
+}
+
+.black-gradient {
+    position: absolute;
+    background-image: url(/asset/images/image-gradient.png);
+    background-size: 100%;
 }
 /*============================= 
 Small devices (portrait tablets and large phones, 600px and up) 
@@ -210,20 +249,22 @@ Medium devices (landscape tablets, 768px and up)
         flex-direction: row;
         width: 100%;
         min-height: 480px;
+        justify-content: space-around;
     }
 
     .high-left {
         border: 1px solid green;
-        max-height: 480px;
-        width: 55%;
+        /* max-height: 480px; */
+        width: 69%;
         margin: 5px;
     }
 
     .high-right {
-        max-height: 480px;
-        width: 40%;
+        /* max-height: 480px; */
+        width: 29%;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         margin: 0px;
     }
 
