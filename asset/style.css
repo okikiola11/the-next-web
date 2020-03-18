@@ -11,6 +11,18 @@ html {
     font-size: 10px;
 }
 
+/* .small-screen nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: 100%;
+    color: #ffffff;
+} */
+
+.medium-screen {
+    display: none;
+}
+
 .flexbox {
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +30,41 @@ html {
     height: 100%;
 }
 
-.flexbox-1 {
+.flex-justify {
+    justify-content: space-between;
+}
+
+.nav-icon {
+    display: flex;
+    padding-right: 20px;
+}
+.nav-icon__img {
+    border-left: 1px solid #555;
+    border-right: 1px solid #555; 
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    padding: 0 7px 0 15px;
+}
+.nav-icon img { 
+    width: 42px;
+    height: 42px;
+    display: block;
+    padding: 12px 10px 0 0;
+}
+              
+.menu-icon {
+    margin-top: 13px;
+    margin-left: 25px;
+}
+.menu-icon div {
+    width: 25px;
+    height: 3px;
+    margin: 0;
+    background-color: #f42;
+}
+
+/*.flexbox-1 {
     flex-basis: 20%;
 }
 
@@ -29,7 +75,6 @@ html {
 
 .flexbox-2__inner {
     background-color: green;
-    /* display: none; */
 }
 .flexbox-1 img {
     width: 100%;
@@ -52,7 +97,7 @@ html {
 
 .flexbox-2__bdr div {
     border-left: 1px solid red;
-}
+} */
 
 /* .flexbox-2__segment nav ul li {
     padding-right: 20px;
@@ -68,15 +113,17 @@ html {
     border-bottom: 1px solid red;
 } */
 
-.flexbox-2__inner {
+/* .flexbox-2__inner {
     display: none;
 }
 
 .clear {
     clear: both;
-}
+} */
 
-/* Main section: Highlights*/
+/*========================== 
+Main section: Highlights
+============================*/
 
 .highlights {
     display: flex;
@@ -84,8 +131,6 @@ html {
     border: 1px solid red;
     width: 100%;
     min-height: 738px;
-
-    
 }
 
 .high-1, .high-2, .high-3 {
@@ -94,7 +139,7 @@ html {
     min-height: 238px;
     margin: 5px 0;
     color: #ffffff;
-    
+
 }
 
 .high-1 {
@@ -135,20 +180,10 @@ html {
 Small devices (portrait tablets and large phones, 600px and up) 
 ===============================*/
 @media only screen and (min-width: 600px) {
-    .flexbox-1 {
-        flex-basis: 20%;
-    }
 
-    /* .flexbox-2 {
-        display: none;
-    } */
-
-    .flexbox-2__inner {
-        background-color: green;
-        /* display: none; */
-    }
-
-    /* Main section: Highlights*/
+    /*================================ 
+    Main section: Highlights
+    ==================================*/
 
     .highlights {
         display: flex;
@@ -163,9 +198,7 @@ Small devices (portrait tablets and large phones, 600px and up)
         width: 100%;
         min-height: 238px;
         margin: 5px 0;
-    }
-    
-    
+    }  
     
 }
 
@@ -173,76 +206,105 @@ Small devices (portrait tablets and large phones, 600px and up)
 Medium devices (landscape tablets, 768px and up) 
 ===============================*/
 @media only screen and (min-width: 768px) {
-    .flexbox-1 {
-        flex-basis: 10%;
-    }
-
-    .flexbox-2 {
-        flex-basis: 90%;
-        display: inline;
-    }
-
-    .flexbox-2__segment {
+    .small-screen {
         display: none;
     }
-
+    .medium-screen {
+        display: block;
+    }
+    .flexbox-1 {
+        width: 100%;
+        height: 100%;
+    }
+    .flexbox-1__box {
+        display: flex;
+    }
+    .box-1 {
+        width: 15%;
+        display: block;
+    }
+    .box-1 div {
+        background-image: url(images/logo.PNG);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: 0 -1.5px;
+        width: 100%;
+        height: 100%;
+    }
+    .box-2 {
+        width: 85%;
+    }
     .header-wrapper-1 {
         display: flex;
         justify-content: space-between;
-        background-color: #000000;
-        font-size: 1.3rem;
-        padding: 3px 20px 0 15px;
+        padding-right: 10px;
+        font-size: 1.4rem;
         width: 100%;
-        border: 1px solid #000000;
+        background-color: #000000;
+        font-family: Arial, Helvetica, sans-serif;
     }
-    
-    .header-wrapper-1 nav {
-        padding: 5px;
-        color: rgb(255, 255, 255, 0.6);
+    .header-wrapper-1 ul {
+        margin: 5px;
+        padding: 3px 0;
     }
-    
-    .header-wrapper-1 nav ul,
-    .header-wrapper-2 nav ul {
-        margin: 0;
-        padding: 0;
+    .header-wrapper-2 ul {
+        margin: 5px;
+        padding: 7px 0;
     }
-    
-    .header-wrapper-1 nav ul li,
-    .header-wrapper-2 nav ul li {
+    .header-wrapper-1 ul li,
+    .header-wrapper-2 ul li {
         display: inline;
         padding-left: 10px;
     }
-    
+    .header-wrapper-1 ul li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255, 0.6);
+    }
+    .active {
+        color: #ffffff !important;
+    }
     .header-wrapper-2 {
         width: 100%;
-        border: 1px solid #000000;
+        font-family: Arial, Helvetica, sans-serif;
         display: flex;
         justify-content: space-between;
         background-color: #ffffff;
         font-size: 1.3rem;
-        padding: 6px 20px 6px 20px;
+        padding-right: 10px;
         text-transform: uppercase;
         line-height: 1.6;
         color: #aaaaaa;
     }
-    
-    .header-wrapper-3 {
+    .flexbox-2 {
         width: 100%;
-        border: 1px solid #000000;
         display: flex;
         justify-content: space-between;
-        background-color: #f1c40f;
+        background-color: #f1c40f; 
+        font-family: Arial, Helvetica, sans-serif;  
+    }
+    .flexbox-2 > a {
         font-size: 1.4rem;
-        padding: 6px 0 6px 29px;
+        padding: 4px 0 4px 143px;
         line-height: 1.6;
         color: #000000;
+        text-decoration: none;
     }
-    
-    .header-wrapper-1 nav ul li:first-child {
-        color: #ffffff;
+    .header-icon__img {
+        padding-top: 15px;
+        border-left: 1px solid #A19B9B;
+        padding-left: 15px;
+    }
+    .header-icon__img img {
+        width: 25px;
+    }
+    .header-wrapper-1 ul li a:hover {
+        color: rgb(255, 255, 255, 0.9);
+        transition: color .4s;
     }
 
-    /* Main section: Highlights*/
+    /*================================= 
+    Main section: Highlights 
+    ===================================*/
 
     .highlights {
         display: flex;
@@ -282,83 +344,35 @@ Medium devices (landscape tablets, 768px and up)
         width: 100%;
         height: 50%;
         margin-top: 5px;
-    }
-
-
-    
+    }   
 }
 
 /*============================= 
 Large devices (laptops/desktops, 992px and up) 
 ===============================*/
 @media only screen and (min-width: 992px) {
-    .flexbox-1 {
-        flex-basis: 10%;
-    }
-
-    .flexbox-2 {
-        flex-basis: 90%;
-        display: inline;
-    }
-
-    .flexbox-2__segment {
+    .small-screen {
         display: none;
     }
 
-    .header-wrapper-1 {
-        display: flex;
-        justify-content: space-between;
-        background-color: #000000;
-        font-size: 1.3rem;
-        padding: 3px 20px 0 15px;
+    .medium-screen {
+        display: block;
+    }
+
+    .box-1 {
+        width: 15%;
+        display: none;
+    }
+    .box-2 {
         width: 100%;
-        border: 1px solid #000000;
+        display: block
     }
-    
-    .header-wrapper-1 nav {
-        padding: 5px;
-        color: rgb(255, 255, 255, 0.6);
-    }
-    
-    .header-wrapper-1 nav ul,
-    .header-wrapper-2 nav ul {
-        margin: 0;
-        padding: 0;
-    }
-    
-    .header-wrapper-1 nav ul li,
-    .header-wrapper-2 nav ul li {
-        display: inline;
-        padding-left: 10px;
-    }
-    
-    .header-wrapper-2 {
-        width: 100%;
-        border: 1px solid #000000;
-        display: flex;
-        justify-content: space-between;
-        background-color: #ffffff;
-        font-size: 1.3rem;
-        padding: 6px 20px 6px 20px;
-        text-transform: uppercase;
-        line-height: 1.6;
-        color: #aaaaaa;
-    }
-    
-    .header-wrapper-3 {
-        width: 100%;
-        border: 1px solid #000000;
-        display: flex;
-        justify-content: space-between;
-        background-color: #f1c40f;
+    .flexbox-2 > a {
         font-size: 1.4rem;
-        padding: 6px 0 6px 29px;
+        padding: 4px 0 4px 15px;
         line-height: 1.6;
         color: #000000;
-    }
-    
-    .header-wrapper-1 nav ul li:first-child {
-        color: #ffffff;
+        text-decoration: none;
     }
 }
 
@@ -366,72 +380,30 @@ Large devices (laptops/desktops, 992px and up)
 Extra large devices (large laptops and desktops, 1200px and up) 
 ===============================*/
 @media only screen and (min-width: 1200px) {
-    .flexbox-1 {
+    .small-screen {
         display: none;
     }
 
-    .flexbox-2 {
-        flex-basis: 100%;
+    .medium-screen {
+        display: block;
     }
 
-    .flexbox-2__segment {
+    .box-1 {
+        width: 15%;
         display: none;
     }
-
-    .header-wrapper-1 {
-        display: flex;
-        justify-content: space-between;
-        background-color: #000000;
-        font-size: 1.3rem;
-        padding: 3px 20px 0 15px;
+    .box-2 {
         width: 100%;
-        border: 1px solid #000000;
+        display: block
     }
-    
-    .header-wrapper-1 nav {
-        padding: 5px;
-        color: rgb(255, 255, 255, 0.6);
-    }
-    
-    .header-wrapper-1 nav ul,
-    .header-wrapper-2 nav ul {
-        margin: 0;
-        padding: 0;
-    }
-    
-    .header-wrapper-1 nav ul li,
-    .header-wrapper-2 nav ul li {
-        display: inline;
-        padding-left: 10px;
-    }
-    
-    .header-wrapper-2 {
-        width: 100%;
-        border: 1px solid #000000;
-        display: flex;
-        justify-content: space-between;
-        background-color: #ffffff;
-        font-size: 1.3rem;
-        padding: 6px 20px 6px 20px;
-        text-transform: uppercase;
-        line-height: 1.6;
-        color: #aaaaaa;
-    }
-    
-    .header-wrapper-3 {
-        width: 100%;
-        border: 1px solid #000000;
-        display: flex;
-        justify-content: space-between;
-        background-color: #f1c40f;
+    .flexbox-2 > a {
         font-size: 1.4rem;
-        padding: 6px 0 6px 29px;
+        padding: 4px 0 4px 15px;
         line-height: 1.6;
         color: #000000;
+        text-decoration: none;
     }
-    
-    .header-wrapper-1 nav ul li:first-child {
-        color: #ffffff;
+    .header-icon__img {
+        padding-right: 15px;
     }
-    
 }
