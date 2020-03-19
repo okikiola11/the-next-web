@@ -63,18 +63,20 @@ Main section: Highlights
 .highlights {
     display: flex;
     flex-flow: column wrap;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     min-height: 738px;
 }
 
 .high-1, .high-2, .high-3 {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 100%;
     min-height: 238px;
     margin: 5px 0;
     color: #ffffff;
-
+    justify-content: unset;
+    color: w;
+    width: 9;
 }
 
 .high-1 {
@@ -85,7 +87,27 @@ Main section: Highlights
     flex-flow: column wrap;
     justify-content: flex-end;
     position: relative;
-    
+    margin-bottom: 0;  
+}
+
+.high-2 {
+    background-image: url(/asset/images/iOS-Reachability-796x416.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.high-3 {
+    background-image: url(/asset/images/Untitled-design18-796x417.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    position: relative;
 }
 
 .highlights a {
@@ -106,11 +128,88 @@ Main section: Highlights
     color: #A19B9B;
 }
 
-.black-gradient {
+.logo-attached {
+    display: none;
     position: absolute;
-    background-image: url(/asset/images/image-gradient.png);
-    background-size: 100%;
+    top: 0;
+    left: 0;
+    width: 50%;
 }
+
+.date {
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+
+}
+
+.black-gradient {
+    background: linear-gradient(370deg, rgba(0,0,0,1), rgba(255,255,255,0));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.high-article {
+    display: block;
+    position: relative;
+    width: 97%;
+    margin: 0 auto;
+    /* line-height: 0; */
+}
+
+.high-article h3 {
+    font-family: "oxanium", Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.high-article h1 {
+    font-family: "poppins", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.0em;
+    margin: 0;
+}
+
+.high-article h6 {
+    color: #AA9B9C;
+    font-family: "raleway", 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.high-article-small {
+    display: block;
+    position: relative;
+    width: 97%;
+    margin: 0 auto;
+    /* line-height: 0; */
+}
+
+.high-article-small h3 {
+    font-family: "oxanium", Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.high-article-small h1 {
+    font-family: "poppins", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.0em;
+    margin: 0;
+}
+
+.high-article-small h6 {
+    color: #AA9B9C;
+    font-family: "raleway", 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+ 
 /*============================= 
 Small devices (portrait tablets and large phones, 600px and up) 
 ===============================*/
@@ -120,20 +219,20 @@ Small devices (portrait tablets and large phones, 600px and up)
     Main section: Highlights
     ==================================*/
 
-    .highlights {
+    /* .highlights {
         display: flex;
         flex-flow: column wrap;
-        border: 1px solid red;
+        /* border: 1px solid red; 
         width: 100%;
         min-height: 738px;
-    }
+    } */
 
-    .high-1, .high-2, .high-3 {
-        border: 1px solid green;
+    /*.high-1, .high-2, .high-3 {
+        /* border: 1px solid green;
         width: 100%;
         min-height: 238px;
         margin: 5px 0;
-    }  
+    }  */
     
 }
 
@@ -237,6 +336,16 @@ Medium devices (landscape tablets, 768px and up)
         transition: color .4s;
     }
 
+    .high-article h1 {
+        font-size: 5em;
+        line-height: 1;
+    }
+
+    .high-article h6 {
+        margin-top: 1em;
+    }
+
+
     /*================================= 
     Main section: Highlights 
     ===================================*/
@@ -250,10 +359,10 @@ Medium devices (landscape tablets, 768px and up)
     }
 
     .high-left {
-        border: 1px solid green;
+        /* border: 1px solid green; */
         /* max-height: 480px; */
         width: 69%;
-        margin: 5px;
+        /* margin: 5px; */
     }
 
     .high-right {
@@ -267,7 +376,7 @@ Medium devices (landscape tablets, 768px and up)
 
     .high-2 {
         display: flex;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         width: 100%;
         height: 45%;
         margin-bottom: 5px;
@@ -275,11 +384,14 @@ Medium devices (landscape tablets, 768px and up)
 
     .high-3 {
         display: flex;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         width: 100%;
         height: 50%;
         margin-top: 5px;
+        margin-bottom: 0;
     }   
+
+      
 }
 
 /*============================= 
@@ -308,6 +420,23 @@ Large devices (laptops/desktops, 992px and up)
         line-height: 1.6;
         color: #000000;
         text-decoration: none;
+    }
+
+    .logo-attached {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: block;
+        background: linear-gradient(160deg, rgba(255,0,0,0.6), rgba(255,0,0,0));
+    }
+
+    .logo-attached img {
+        position: absolute;
+        width: 50%;
+        top: 1em;
+        left: 1em;
     }
 }
 
