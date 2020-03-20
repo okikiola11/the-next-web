@@ -217,6 +217,24 @@ LATEST NEWS
 .col-1 {
     border: 1px solid #000000;
 }
+
+.news-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 100%;
+    margin: 10px;
+}
+.col-sm-1 {
+    padding: 25px;
+    background: #f42;
+}
+.col-sm-screen {
+    display: flex;
+    justify-content: space-around;
+}
  
 /*============================= 
 Small devices (portrait tablets and large phones, 600px and up) 
@@ -392,6 +410,25 @@ Medium devices (landscape tablets, 768px and up)
         width: 33.33%;
         border: 1px solid #000000;
     }
+
+    .news-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        width: calc(33.3333% - 20px);
+        margin: 10px;
+    }
+    .col-sm-1 {
+        padding: 25px;
+        background: #f42;
+    }
+    .col-sm-screen {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
       
 }
 
@@ -446,9 +483,23 @@ Large devices (laptops/desktops, 992px and up)
         width: 100%;
     }
     
-    .col-1 {
+    .ccol-2 {
         width: 25%;
         border: 1px solid #000000;
+    }
+
+    .news-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        width: calc(25% - 20px);
+        margin: 10px;
+    }
+    .col-sm-1 {
+        padding: 25px;
+        background: #f42;
     }
 }
 
