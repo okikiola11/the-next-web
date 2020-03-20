@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    height: 5000px; /*delete later*/
 }
 
 html {
@@ -217,7 +218,86 @@ LATEST NEWS
 .col-1 {
     border: 1px solid #000000;
 }
- 
+
+/*Funding rounds*/
+
+.funding-cont {
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    margin: 0 auto;
+    min-height: 24em;
+}
+
+.funding-header {
+    color: #FF4422;
+    min-height: 12.2em;
+}
+
+.funding-header ul {
+    list-style: none;
+    padding-left: 0;   
+}
+
+.funding-header ul li {
+    padding-top: 0.5em;
+}
+
+.funding-article-cont {
+    min-height: 23em;
+    display: flex;
+    flex-direction: column;
+}
+
+.funding-article-header {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #FF4422,#FF4422 30%,#FFEBE8 30%,#FFEBE8 100%);
+    min-height: 10.2em;
+    padding-left: 6em;
+}
+
+.funding-article-header-title {
+color: #FFFFFF;
+font-family: helvetica, arial, sans-serif;
+font-size: 1.8em;
+height: 30%;
+}
+
+
+
+.funding-article-header-subtitle {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 1.8em;
+}
+
+.funding-article-header-series {
+    font-family: "oxanium", Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+.funding-article-content {
+    min-height: 12.7em;
+}
+
+.funding-article-data {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFAF8;
+    min-height: 8.2em;
+    padding-left: 1.5em;
+}
+
+.funding-article-description {
+    display: flex;
+    background-color: #FFFAF8;
+    min-height: 4.5em;
+    border-top: 1px solid #FFCCC3;
+    padding-left: 1.5em;
+}
+
+
+
 /*============================= 
 Small devices (portrait tablets and large phones, 600px and up) 
 ===============================*/
