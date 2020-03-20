@@ -208,9 +208,90 @@ Main section: Highlights
 /*=================================================== 
 LATEST NEWS 
 =====================================================*/
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Sen', sans-serif;
+}
 
+.col {
+    width: 100%;
+    margin: 10px;
+}
+.col-sm-1 {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+}
+.col-sm-screen {
+    display: flex;
+}
+.col-sm-screen__img {
+    min-width: 22%;
+    height: 110px;
+}
+.col-sm-screen img {
+    width: 100%;
+    height: 100%;
+}
+.col-sm-screen__txt h2 {
+    font-size: 1.7rem;
+}
 
-
+.col-sm-screen__txt {
+    width: 78%;
+    padding: 10px;
+}
+.col-sm-screen__txt p {
+    color: #555555;
+    font-size: 1.3rem;
+    margin: 7px 0;
+}
+.col-sm__date {
+    padding-left: 5px;
+}
+.news-container-hdr {
+    font-family: 'Sen', sans-serif;
+    margin-left: 10px;
+    font-size: 2.8rem;
+    color: #FF4422;
+    font-weight: 800;
+}
+.col-sm__bgimg,
+.col-sm__bgimg2,
+.col-sm__bgimg3,
+.col-sm__bgimg4,
+.col-sm__bgimg5,
+.col-sm__bgimg6,
+.col-sm__bgimg7,
+.col-sm__bgimg8 {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+.col-sm__bgimg {
+    background-image: url(images/img1.jpg);   
+}
+.col-sm__bgimg2 {
+    background-image: url(images/img2.PNG);   
+}
+.col-sm__bgimg3 {
+    background-image: url(images/img3.PNG);   
+}
+.col-sm__bgimg4 {
+    background-image: url(images/img4.PNG);   
+}
+.col-sm__bgimg5 {
+    background-image: url(images/img5.PNG);   
+}
+.col-sm__bgimg6 {
+    background-image: url(images/img6.PNG);   
+}
+.col-sm__bgimg7 {
+    background-image: url(images/img7.PNG);   
+}
+.col-sm__bgimg8 {
+    background-image: url(images/img1.PNG);   
+}
 /*===================================================
 Funding rounds
 =====================================================*/
@@ -454,8 +535,53 @@ Medium devices (landscape tablets, 768px and up)
     /*===================================== 
     Latest News 
     =======================================*/
-    
-      
+    .news-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        width: calc(33.3333% - 20px);
+        margin: 10px;
+    }
+    .col-sm-1 {
+        padding: 5px;
+    }
+    .col-sm-screen {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .col-sm-screen__img {
+        width: 100%;
+        height: 100%;
+    }
+    .col-sm-screen img {
+        width: 100%;
+        height: 100%;
+    }
+    .col-sm-screen__txt h2 {
+        font-size: 1.7rem;
+        margin: 2px 0;
+    }
+    .col-sm-screen__txt {
+        width: 100%;
+        padding:5px 0;
+        text-align: justify;
+    }
+    .col-sm__bgimg,
+    .col-sm__bgimg2,
+    .col-sm__bgimg3,
+    .col-sm__bgimg4,
+    .col-sm__bgimg5,
+    .col-sm__bgimg6,
+    .col-sm__bgimg7,
+    .col-sm__bgimg8 {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 160px;
+    }
 }
 
 /*============================= 
@@ -503,7 +629,24 @@ Large devices (laptops/desktops, 992px and up)
         left: 1em;
     }
 
-    
+    .news-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 50px;
+    }
+
+    .col {
+        width: calc(25% - 20px);
+        margin: 10px;
+    }
+    .col-sm-1 {
+        padding: 5px;
+    }
+    .news-container-hdr {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
 }
 
 /*============================= 
