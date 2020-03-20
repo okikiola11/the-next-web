@@ -56,20 +56,18 @@ html {
     background-color: #f42;
 }
 
-/*========================== 
+/*==================================== 
 Main section: Highlights
-============================*/
+======================================*/
 
 .highlights {
     display: flex;
     flex-flow: column wrap;
-    /* border: 1px solid red; */
     width: 100%;
     min-height: 738px;
 }
 
 .high-1, .high-2, .high-3 {
-    /* border: 1px solid green; */
     width: 100%;
     min-height: 238px;
     margin: 5px 0;
@@ -80,7 +78,7 @@ Main section: Highlights
 }
 
 .high-1 {
-    background-image: url(/asset/images/brainstorm-1-796x417.png);
+    background-image: url(images/brainstorm-1-796x417.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -91,7 +89,7 @@ Main section: Highlights
 }
 
 .high-2 {
-    background-image: url(/asset/images/iOS-Reachability-796x416.jpg);
+    background-image: url(images/iOS-Reachability-796x416.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -101,7 +99,7 @@ Main section: Highlights
 }
 
 .high-3 {
-    background-image: url(/asset/images/Untitled-design18-796x417.png);
+    background-image: url(images/Untitled-design18-796x417.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -144,7 +142,6 @@ Main section: Highlights
     position: absolute;
     right: 1em;
     top: 1em;
-
 }
 
 .black-gradient {
@@ -159,7 +156,6 @@ Main section: Highlights
     position: relative;
     width: 97%;
     margin: 0 auto;
-    /* line-height: 0; */
 }
 
 .high-article h3 {
@@ -187,7 +183,6 @@ Main section: Highlights
     position: relative;
     width: 97%;
     margin: 0 auto;
-    /* line-height: 0; */
 }
 
 .high-article-small h3 {
@@ -209,6 +204,19 @@ Main section: Highlights
     margin-top: 0;
     margin-bottom: 1em;
 }
+
+/*=================================================== 
+LATEST NEWS 
+=====================================================*/
+
+.news-container {
+    display: block;
+    /* width: 100%; */
+}
+
+.col-1 {
+    border: 1px solid #000000;
+}
  
 /*============================= 
 Small devices (portrait tablets and large phones, 600px and up) 
@@ -218,21 +226,6 @@ Small devices (portrait tablets and large phones, 600px and up)
     /*================================ 
     Main section: Highlights
     ==================================*/
-
-    /* .highlights {
-        display: flex;
-        flex-flow: column wrap;
-        /* border: 1px solid red; 
-        width: 100%;
-        min-height: 738px;
-    } */
-
-    /*.high-1, .high-2, .high-3 {
-        /* border: 1px solid green;
-        width: 100%;
-        min-height: 238px;
-        margin: 5px 0;
-    }  */
     
 }
 
@@ -299,6 +292,7 @@ Medium devices (landscape tablets, 768px and up)
     }
     .header-wrapper-2 {
         width: 100%;
+        box-shadow: 0 0 32px rgba(0,0,0,.15);
         font-family: Arial, Helvetica, sans-serif;
         display: flex;
         justify-content: space-between;
@@ -309,6 +303,7 @@ Medium devices (landscape tablets, 768px and up)
         line-height: 1.6;
         color: #aaaaaa;
     }
+
     .flexbox-2 {
         width: 100%;
         display: flex;
@@ -345,7 +340,6 @@ Medium devices (landscape tablets, 768px and up)
         margin-top: 1em;
     }
 
-
     /*================================= 
     Main section: Highlights 
     ===================================*/
@@ -359,14 +353,10 @@ Medium devices (landscape tablets, 768px and up)
     }
 
     .high-left {
-        /* border: 1px solid green; */
-        /* max-height: 480px; */
         width: 69%;
-        /* margin: 5px; */
     }
 
     .high-right {
-        /* max-height: 480px; */
         width: 29%;
         display: flex;
         flex-direction: column;
@@ -376,7 +366,6 @@ Medium devices (landscape tablets, 768px and up)
 
     .high-2 {
         display: flex;
-        /* border: 1px solid black; */
         width: 100%;
         height: 45%;
         margin-bottom: 5px;
@@ -384,13 +373,25 @@ Medium devices (landscape tablets, 768px and up)
 
     .high-3 {
         display: flex;
-        /* border: 1px solid black; */
         width: 100%;
         height: 50%;
         margin-top: 5px;
         margin-bottom: 0;
-    }   
-
+    }  
+    
+    /*===================================== 
+    Latest News 
+    =======================================*/
+    .news-container {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    .col-1 {
+        width: 33.33%;
+        border: 1px solid #000000;
+    }
       
 }
 
@@ -438,6 +439,17 @@ Large devices (laptops/desktops, 992px and up)
         top: 1em;
         left: 1em;
     }
+
+    .news-container {
+        display: flex;
+        justify-content: center; 
+        width: 100%;
+    }
+    
+    .col-1 {
+        width: 25%;
+        border: 1px solid #000000;
+    }
 }
 
 /*============================= 
@@ -470,4 +482,9 @@ Extra large devices (large laptops and desktops, 1200px and up)
     .header-icon__img {
         padding-right: 15px;
     }
+
+    /* .news-container__inner {
+        width: 25%;
+        border: 1px solid #000000;
+    } */
 }
