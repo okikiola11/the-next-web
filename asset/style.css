@@ -299,7 +299,7 @@ Funding rounds
 .funding-cont {
     display: flex;
     flex-direction: column;
-    width: 94%;
+    /* width: 94%; */
     margin: 0 auto;
     min-height: 24em;
 }
@@ -327,26 +327,47 @@ Funding rounds
 .funding-article-header {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to bottom, #FF4422,#FF4422 30%,#FFEBE8 30%,#FFEBE8 100%);
+    /* border: 1px solid red; */
     min-height: 10.2em;
-    padding-left: 6em;
+    /* padding-left: 6em; */
 }
 
 .funding-article-header-title {
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
     color: #FFFFFF;
     font-family: helvetica, arial, sans-serif;
     font-size: 1.8em;
-    height: 30%;
+    font-weight: 600;
+    width: 100%;
+    min-height: 4.3em;
+    background-color: #FF4422;
+}
+
+.funding-article-header-title span {
+    padding-left: 6em;
 }
 
 .funding-article-header-subtitle {
-    font-family: helvetica, arial, sans-serif;
-    font-size: 1.8em;
+    
+    min-height: 5.9em;
+    background-color: #FFEBE8;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10.8em;
 }
 
-.funding-article-header-series {
+.funding-article-header-subtitle-money {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.funding-article-header-subtitle-series {
     font-family: "oxanium", Arial, Helvetica, sans-serif;
     font-size: 1.1em;
+    opacity: 0.8;
 }
 
 .funding-article-content {
