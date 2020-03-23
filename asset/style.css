@@ -305,7 +305,7 @@ Funding rounds
 .funding-cont {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0 50px;
     min-height: 24em;
     padding: 0 10px;
 }
@@ -460,14 +460,14 @@ justify-content: center;
 APPS CONTAINER 
 =====================================*/
 .app-margin {
-    margin: 20px 45px;
+    margin: 20px 50px;
 }
 .apps-container__img {
     width: 100%;
     position: relative;
 }
 .apps-container__hdr {
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 700;
 }
 .apps-container__hdr a,
