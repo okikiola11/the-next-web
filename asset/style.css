@@ -25,6 +25,9 @@ html {
 .flex-justify {
     justify-content: space-between;
 }
+.hdr-heading {
+    display: none;
+}
 
 .nav-icon {
     display: flex;
@@ -208,19 +211,22 @@ Main section: Highlights
 /*=================================================== 
 LATEST NEWS 
 =====================================================*/
-.news-container {
+.news-container,
+.apps-container {
     display: flex;
     flex-wrap: wrap;
     font-family: 'Sen', sans-serif;
 }
 
-.col {
+.col, 
+.col-sm-2 {
     width: 100%;
     margin: 10px;
 }
 .col-sm-1 {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
 }
+
 .col-sm-screen {
     display: flex;
 }
@@ -299,7 +305,6 @@ Funding rounds
 .funding-cont {
     display: flex;
     flex-direction: column;
-    /* width: 94%; */
     margin: 0 auto;
     min-height: 24em;
 }
@@ -390,7 +395,109 @@ Funding rounds
     padding-left: 1.5em;
 }
 
+/*=================================== 
+APPS CONTAINER 
+=====================================*/
+.app-margin {
+    margin: 20px 45px;
+}
+.apps-container__img {
+    width: 100%;
+    position: relative;
+}
+.apps-container__hdr {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.apps-container__hdr a,
+.container__title--text h2 a {
+    color: #f42;
+    text-decoration: none;
+}
+.container__title--text h2 {
+    color: #f42;
+}
+.apps-container__img img, 
+.apps-container__title img {
+    width: 100%;
+    height: 100%;
+}
+.apps-container ul {
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+.container__title--text {
+    width: 70%;
+}
+.container__title--img {
+    width: 30%;
+}
+.container__list--li {
+    list-style: none;
+}
+.container__list--li::before {
+    content: "\2022";  
+    color: #f42 !important;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em;
+}
+.apps-container__title  {
+    width: 100%;
+    display: flex;
+    padding-left: 15px;
+    justify-content: space-around;
+    background-color: rgba(255,68,34,.06);
+}
+.container__list--li a {
+    color: #555555;
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 2;
+}
+.container__img--top {
+    position: absolute;
+    top: 0;
+    background: linear-gradient(370deg, rgba(0,0,0,0.7), rgba(255,255,255,0));
+    width: 100%;
+    height: 100%;
+}
+.container__img--top div {
+    bottom: 2px;
+    left: 10px;
+    position: absolute;
+}
+.container__img--top h3 {
+    color: #ffffff;
+    line-height: 1.6;
+}
+.container__img--top h3 a {
+    font-size: 2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
 
+.container__date {
+    font-size: 1.3rem;
+    color: #AA9B9C;
+}
+.container__date a {
+    color: #AA9B9C;
+    text-decoration: none;
+}
+.container__img--top h3 a:hover {
+    text-decoration: underline;
+    transition: .4s;
+}
+.container__date a:hover {
+    color: #ffffff;
+    transition: .4s;
+}
+.container__list--li a:hover {
+    color: #000000;
+    transition: .4s;
+}
 
 /*============================= 
 Small devices (portrait tablets and large phones, 600px and up) 
@@ -565,6 +672,7 @@ Medium devices (landscape tablets, 768px and up)
         width: calc(33.3333% - 20px);
         margin: 10px;
     }
+    
     .col-sm-1 {
         padding: 5px;
     }
@@ -602,6 +710,14 @@ Medium devices (landscape tablets, 768px and up)
         background-size: 100% 100%;
         width: 100%;
         height: 160px;
+    }
+
+    /*======================================== 
+    APPS CONTAINER 
+    ==========================================*/
+    .col-sm-2 {
+        width: calc(50% - 20px);
+        margin: 10px;
     }
 }
 
@@ -666,6 +782,14 @@ Large devices (laptops/desktops, 992px and up)
     .news-container-hdr {
         margin-left: 60px;
         margin-right: 60px;
+    }
+
+    /*==================================== 
+    APPS CONTAINER 
+    ======================================*/
+    .col-sm-2 {
+        width: calc(33.3333% - 20px);
+        margin: 10px;
     }
 
 }
