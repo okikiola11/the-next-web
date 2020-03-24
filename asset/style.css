@@ -341,29 +341,29 @@ Funding rounds
 .funding-cont {
     display: flex;
     flex-direction: column;
-    margin: 0 50px;
+    margin: 0;
     min-height: 24em;
-    padding: 0 10px;
+    padding: 0 2em;
+    max-width: 115.2em;
 }
 
 .funding-header {
     color: #FF4422;
-    min-height: 12.2em;
-    
+    min-height: 12.em;
 }
 
 .funding-header h2 {
     font-family: "poppins", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2.7rem;
     font-weight: 700;
-    /* margin-bottom: 0em; */
+    margin-bottom: 0em;
 }
 
 .funding-header ul {
     list-style: none;
     padding-left: 0;
     margin-top: 0;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
 }
 
 .funding-header ul li {
@@ -598,6 +598,104 @@ APPS CONTAINER
     border-bottom: none;
 }
 
+/* Footer */
+
+.footer-cont {
+    height: 25.7em;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top {
+    background-color: #131313;
+    height: 55%;
+    
+}
+
+.footer-icons-cont {
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffff;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin-top: 4em;
+}
+
+.footer-icons-cont li {
+    border-radius: 50%;
+    font-size: 1.7em;
+    margin: 0 0.2em;
+    background-color: #333333;
+}
+.footer-icons-cont li:nth-child(1) {
+    padding: 0.5em 0.7em;   
+}
+
+.footer-icons-cont li:nth-child(2) {
+    padding: 0.5em 0.6em;   
+}
+
+.footer-icons-cont li:nth-child(3) {
+    padding: 0.5em 0.6em;   
+}
+
+.footer-icons-cont li:nth-child(4) {
+    padding: 0.5em 0.7em;   
+}
+
+.footer-icons-cont li:nth-child(5) {
+    padding: 0.5em 0.7em;   
+}
+
+.footer-icons-cont li:nth-child(6) {
+    padding: 0.5em 0.7em;   
+}
+
+.footer-icons-cont li:nth-child(7) {
+    padding: 0.5em 0.7em;   
+}
+
+.footer-subnav {
+    display: flex;
+    color: #ffffff;
+    list-style: none;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.footer-subnav li {
+    font-size: 1.2em;
+    font-family:  "oxanium", Arial, Helvetica, sans-serif;
+    color: #AAAAAA;
+    margin: 0 0.5em;
+}
+
+.footer-bottom {
+    background-color: #000000;
+    height: 45%;
+    color: #AAAAAA;
+    font-family: 'Sen', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 3.5em;
+}
+
+.footer-bottom p {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-bottom p span {
+    display: inline;
+    height: 1.7em;
+}
+
+.footer-bottom p img {
+    height: 0.6em;
+    
+}
+
 
 /*============================= 
 Medium devices (landscape tablets, 768px and up) 
@@ -817,6 +915,10 @@ Medium devices (landscape tablets, 768px and up)
     /*=========================================
     Funding rounds 
     ===========================================*/
+    
+    .funding-header h2 {
+        margin-bottom: 0.1em;
+    }
 
     .funding-header ul {
         font-size: 1.2em;
@@ -827,9 +929,8 @@ Medium devices (landscape tablets, 768px and up)
 
     .funding-header ul li {
         float: left;
-        margin: 0 1em;
-        margin: 0;
         padding: 0;
+        margin-bottom: 1em;
     }
 
     .funding-header ul li:first-child {
@@ -873,6 +974,102 @@ Medium devices (landscape tablets, 768px and up)
     .header-wrapper-2 ul li a:hover {
         color: #000000;
         transition: .4s;
+    }
+
+    /* Footer */
+
+    .footer-cont {
+        height: 25.7em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-top {
+        background-color: #131313;
+        height: 60%;
+        
+    }
+    
+    .footer-icons-cont {
+        display: flex;
+        flex-wrap: wrap;
+        color: #ffffff;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+        margin-top: 4em;
+    }
+    
+    .footer-icons-cont li {
+        border-radius: 50%;
+        font-size: 1.7em;
+        margin: 0 0.5em;
+        background-color: #333333;
+    }
+    .footer-icons-cont li:nth-child(1) {
+        padding: 0.5em 0.7em;   
+    }
+    
+    .footer-icons-cont li:nth-child(2) {
+        padding: 0.5em 0.6em;   
+    }
+    
+    .footer-icons-cont li:nth-child(3) {
+        padding: 0.5em 0.6em;   
+    }
+    
+    .footer-icons-cont li:nth-child(4) {
+        padding: 0.5em 0.7em;   
+    }
+    
+    .footer-icons-cont li:nth-child(5) {
+        padding: 0.5em 0.7em;   
+    }
+    
+    .footer-icons-cont li:nth-child(6) {
+        padding: 0.5em 0.7em;   
+    }
+    
+    .footer-icons-cont li:nth-child(7) {
+        padding: 0.5em 0.7em;   
+    }
+    
+    .footer-subnav {
+        display: flex;
+        color: #ffffff;
+        list-style: none;
+        justify-content: center;
+        margin-top: 3em;
+        padding-inline-start: 0;
+    }
+    
+    .footer-subnav li {
+        font-size: 1.4em;
+        font-family:  "oxanium", Arial, Helvetica, sans-serif;
+        color: #AAAAAA;
+        margin: 0 0.5em;
+    }
+    
+    .footer-bottom {
+        background-color: #000000;
+        height: 40%;
+        color: #AAAAAA;
+        font-family: 'Sen', sans-serif;
+        font-size: 1.4em;
+        text-align: center;
+        line-height: 5.1em;
+        
+    }
+    
+    .footer-bottom p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .footer-bottom p img {
+        height: 0.6em;
+        
     }
 }
 
@@ -942,20 +1139,37 @@ Large devices (laptops/desktops, 1024px and up)
     funding rounds 
     ==========================================*/
 
+    
+
     .funding-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         min-height: 2.4em;
         margin-top: 2.4em;
+        margin-bottom: 2em;
     }
 
     .funding-header h2 {
-        margin: 0;
+        /* margin: 0; */
+        align-self: center;
+        display: inline-block;
+        margin-top: 0;
+        align-self: center;
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    .funding-header ul {
+        display: flex;
+        align-items: center;
+        
     }
 
     .funding-header ul li{
         font-size: 1.3em;
+        margin: 0;
+        
     }
 
     .funding-article-wrap {
@@ -1008,6 +1222,12 @@ Extra large devices (large laptops and desktops, 1200px and up)
     }
     .header-icon__img {
         padding-right: 15px;
+    }
+
+    /* Funding rounds */
+
+    .funding-cont {
+        margin: 0 auto;
     }
 
 }
