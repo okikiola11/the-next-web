@@ -162,13 +162,13 @@ Main section: Highlights
 }
 
 .high-article h3 {
-    font-family: "oxanium", Arial, Helvetica, sans-serif;
+    font-family: 'Sen', sans-serif;
     font-size: 1.4em;
     margin: 0;
 }
 
 .high-article h1 {
-    font-family: "poppins", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Sen', sans-serif;
     font-size: 2.0em;
     margin: 0;
 }
@@ -211,13 +211,19 @@ Main section: Highlights
 /*=================================================== 
 LATEST NEWS 
 =====================================================*/
-.news-container,
+
 .apps-container {
     display: flex;
     flex-wrap: wrap;
     font-family: 'Sen', sans-serif;
 }
 
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Sen', sans-serif;
+    margin: 0 25px;
+}
 .col, 
 .col-sm-2 {
     width: 100%;
@@ -245,6 +251,7 @@ LATEST NEWS
 .col-sm-screen__txt {
     width: 78%;
     padding: 10px;
+    align-items: baseline;
 }
 .col-sm-screen__txt p {
     color: #555555;
@@ -254,9 +261,12 @@ LATEST NEWS
 .col-sm__date {
     padding-left: 5px;
 }
+.new-date {
+    font-size: 1.9rem;
+}
 .news-container-hdr {
-    font-family: 'Sen', sans-serif;
-    margin-left: 10px;
+    font-family: "poppins", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px 30px;
     font-size: 2.8rem;
     color: #FF4422;
     font-weight: 800;
@@ -268,7 +278,12 @@ LATEST NEWS
 .col-sm__bgimg5,
 .col-sm__bgimg6,
 .col-sm__bgimg7,
-.col-sm__bgimg8 {
+.col-sm__bgimg8,
+.col-sm__bgimg1--deals,
+.col-sm__bgimg2--deals,
+.col-sm__bgimg3--deals,
+.col-sm__bgimg4--deals,
+.col-sm__bgimg8--deals {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -297,6 +312,27 @@ LATEST NEWS
 }
 .col-sm__bgimg8 {
     background-image: url(images/img1.PNG);   
+}
+.col-sm__bgimg1--deals {
+    background-image: url(images/deals1.PNG);
+}
+.col-sm__bgimg2--deals {
+    background-image: url(images/deals2.PNG);
+}
+.col-sm__bgimg3--deals {
+    background-image: url(images/deals3.PNG);
+}
+.col-sm__bgimg4--deals {
+    background-image: url(images/deals4.PNG);
+}
+.col-sm__bgimg8--deals {
+    background-image: url(images/deals8.PNG);
+}
+.section-deals-hdr {
+    margin: 10px 65px;
+}
+.deals-hdr2 {
+    font-size: 1.9rem;
 }
 /*===================================================
 Funding rounds
@@ -334,10 +370,6 @@ Funding rounds
     padding-top: 1.1em;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.4em;
-}
-
-.funding-header ul li:last-child {
-    /* margin-bottom: 2em; */
 }
 
 .funding-article-cont {
@@ -468,7 +500,8 @@ APPS CONTAINER
 }
 .apps-container__hdr {
     font-size: 2.6rem;
-    font-weight: 700;
+    font-weight: bold;
+    font-family: "poppins", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .apps-container__hdr a,
 .container__title--text h2 a {
@@ -495,6 +528,7 @@ APPS CONTAINER
 }
 .container__list--li {
     list-style: none;
+    border-bottom: 1px solid #e6dcdc;
 }
 .container__list--li::before {
     content: "\2022";  
@@ -504,6 +538,7 @@ APPS CONTAINER
     width: 1em; 
     margin-left: -1em;
 }
+
 .apps-container__title  {
     width: 100%;
     display: flex;
@@ -558,6 +593,9 @@ APPS CONTAINER
 .container__list--li a:hover {
     color: #000000;
     transition: .4s;
+}
+.container__list--li:last-child {
+    border-bottom: none;
 }
 
 
@@ -619,6 +657,10 @@ Medium devices (landscape tablets, 768px and up)
         text-decoration: none;
         color: rgb(255, 255, 255, 0.6);
     }
+    .header-wrapper-2 ul li a {
+        text-decoration: none;
+        color: #aaaaaa;
+    }
     .active {
         color: #ffffff !important;
     }
@@ -633,7 +675,7 @@ Medium devices (landscape tablets, 768px and up)
         padding-right: 10px;
         text-transform: uppercase;
         line-height: 1.6;
-        color: #aaaaaa;
+        
     }
 
     .flexbox-2 {
@@ -756,17 +798,27 @@ Medium devices (landscape tablets, 768px and up)
     .col-sm__bgimg5,
     .col-sm__bgimg6,
     .col-sm__bgimg7,
-    .col-sm__bgimg8 {
+    .col-sm__bgimg8,
+    .col-sm__bgimg1--deals,
+    .col-sm__bgimg2--deals,
+    .col-sm__bgimg3--deals,
+    .col-sm__bgimg4--deals,
+    .col-sm__bgimg8--deals {
         background-repeat: no-repeat;
         background-size: 100% 100%;
         width: 100%;
         height: 160px;
     }
-
-    /* Funding rounds */
+    .deals-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    /*=========================================
+    Funding rounds 
+    ===========================================*/
 
     .funding-header ul {
-
         font-size: 1.2em;
         text-align: center;
         margin: 0;
@@ -801,8 +853,6 @@ Medium devices (landscape tablets, 768px and up)
         position: relative;
     }
 
-    
-
     .funding-article-cont {
         min-height: 23em;
         display: flex;
@@ -819,6 +869,10 @@ Medium devices (landscape tablets, 768px and up)
     .col-sm-2 {
         width: calc(50% - 20px);
         margin: 10px;
+    }
+    .header-wrapper-2 ul li a:hover {
+        color: #000000;
+        transition: .4s;
     }
 }
 
@@ -881,11 +935,12 @@ Large devices (laptops/desktops, 1024px and up)
         padding: 5px;
     }
     .news-container-hdr {
-        margin-left: 60px;
-        margin-right: 60px;
+        margin: 35px 62px;
     }
 
-    /* funding rounds */
+    /*======================================== 
+    funding rounds 
+    ==========================================*/
 
     .funding-header {
         display: flex;
@@ -913,8 +968,6 @@ Large devices (laptops/desktops, 1024px and up)
     .extra-funding-article-cont {
         display: flex;
     }
-    
-
 
     /*==================================== 
     APPS CONTAINER 
