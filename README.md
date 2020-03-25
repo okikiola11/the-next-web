@@ -1,7 +1,7 @@
 # The Next Web Project
 This is a web clone of the Next Web, a tech-focused magazine which uses media queries to gracefully degrade their site as the window size is reduced.
 
-![screenshot](asset/images/screenchot.PNG)
+![screenshot](asset/images/screenshot.PNG)
 
 This project shows the format of designing a responsive webpage using HTML semantics element and CSS media queries of different breakpoints, for smaller devices, medium devices and large screen devices. These various breakpoints makes the webpage responsive across various platforms.
 
