@@ -1,9 +1,9 @@
 # The Next Web Project
 This is a web clone of the Next Web, a tech-focused magazine which uses media queries to gracefully degrade their site as the window size is reduced.
 
-![screenshot]()
+![screenshot](asset/images/screenchot.PNG)
 
-This project shows the format of designing the layout of a webpage using HTML semantics element and various shades of color gray to structure out the smashing website webpage. We did a heatmap of the main areas of the page.
+This project shows the format of designing a responsive webpage using HTML semantics element and CSS media queries of different breakpoints, for smaller devices, medium devices and large screen devices. These various breakpoints makes the webpage responsive across various platforms.
 
 ## Built With
 
