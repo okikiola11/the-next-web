@@ -12,7 +12,7 @@ This project shows the format of designing a responsive webpage using HTML seman
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/okikiola11/the-next-web/a33338454c633897f30e4030349be089c904038a/index.html)
+[Live Demo Link](https://rawcdn.githack.com/okikiola11/the-next-web/b93cff57d1c2ba03bb51ad35c1995d6c504e3dde/index.html)
 
 
 ## Getting Started
