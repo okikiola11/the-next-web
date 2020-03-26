@@ -122,20 +122,16 @@ Main section: Highlights
 }
 
 .high-1 {
-  background-image: url(images/brainstorm-1-796x417.png);
-  background-size: cover;
-  background-position: center;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-end;
-  position: relative;
+  /* position: relative; */
   margin-bottom: 0;
+  position: relative;
+  max-height: 23.8em;
 }
 
 .high-2 {
-  background-image: url(images/iOS-Reachability-796x416.jpg);
-  background-size: cover;
-  background-position: center;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-end;
@@ -143,9 +139,6 @@ Main section: Highlights
 }
 
 .high-3 {
-  background-image: url(images/Untitled-design18-796x417.png);
-  background-size: cover;
-  background-position: center;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-end;
@@ -211,31 +204,56 @@ Main section: Highlights
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 
 .high-article {
   display: block;
-  position: relative;
-  width: 97%;
-  margin: 0 auto;
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+  /* margin: 0 auto; */
+  position: absolute;
+}
+
+.high-article-background {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .high-article-hdr {
-  font-size: 5.5rem;
-  margin: 10px 0;
-  line-height: 1.2;
+  font-size: 2.7rem;
+  /* margin: 10px 0;
+  line-height: 1.2; */
+  position: absolute;
+  margin: 0;
+  top: 5.5em;
+  left: 0.3em;
+  z-index: 2;
 }
 
 .high-article-hdr-1 {
   font-size: 2.7rem;
-  margin: 10px 0;
-  line-height: 1.2;
+  /* margin: 10px 0; */
+  /* line-height: 1.2; */
+  position: absolute;
+  z-index: 2;
+  top: 4.5em;
+  left: 0.4em;
 }
 
 .high-article h3 {
-  font-family: 'Sen', sans-serif;
+  font-family: "oxanium", Arial, Helvetica, sans-serif;
   font-size: 1.4em;
   margin: 0;
+  position: absolute;
+  z-index: 2;
+  position: absolute;
+  top: 8.5em;
+  left: 0.6em;
 }
 
 .high-article h1 {
@@ -250,19 +268,28 @@ Main section: Highlights
   font-size: 1.2em;
   margin-top: 0;
   margin-bottom: 1em;
+  position: absolute;
+  top: 18em;
+  left: 1em;
+  z-index: 2;
 }
 
 .high-article-small {
   display: block;
   position: relative;
-  width: 97%;
-  margin: 0 auto;
+  /* width: 97%; */
+  /* margin: 0 auto; */
+  height: 23.8em;
 }
 
 .high-article-small h3 {
   font-family: "oxanium", Arial, Helvetica, sans-serif;
   font-size: 1.4em;
   margin: 0;
+  z-index: 2;
+  position: absolute;
+  top: 8.5em;
+  left: 0.8em;
 }
 
 .high-article-small h1 {
@@ -277,6 +304,10 @@ Main section: Highlights
   font-size: 1.2em;
   margin-top: 0;
   margin-bottom: 1em;
+  position: absolute;
+  z-index: 2;
+  top: 18em;
+  left: 1em;
 }
 
 /* ===================================================
@@ -477,6 +508,13 @@ Funding rounds
   font-family: "oxanium", Arial, Helvetica, sans-serif;
   color: #aaa;
   margin: 0 0.5em;
+  text-decoration: none;
+}
+
+.footer-subnav li a {
+  font-family: "oxanium", Arial, Helvetica, sans-serif;
+  color: #aaa;
+  text-decoration: none;
 }
 
 .funding-header ul li {
@@ -787,6 +825,7 @@ Footer
   justify-content: center;
   margin-top: 3em;
   padding-inline-start: 0;
+  text-decoration: none;
 }
 
 .footer-bottom {
@@ -807,6 +846,10 @@ Footer
 .footer-bottom p span {
   display: inline;
   max-height: 1.7em;
+}
+
+.footer-bottom p span b {
+  color: #f42;
 }
 
 .footer-bottom p img {
@@ -884,7 +927,7 @@ Medium devices (landscape tablets, 768px and up)
   }
 
   .footer-subnav li {
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-family: "oxanium", Arial, Helvetica, sans-serif;
     color: #aaa;
     margin: 0 0.5em;
@@ -981,6 +1024,7 @@ Medium devices (landscape tablets, 768px and up)
 
   .high-article h6 {
     margin-top: 1em;
+    top: 37em;
   }
 
   /* =================================
@@ -997,6 +1041,18 @@ Medium devices (landscape tablets, 768px and up)
 
   .high-left {
     width: 69%;
+    max-height: 100%;
+  }
+
+  .high-article-hdr {
+    font-size: 6.5em;
+    top: 3.5em;
+    left: 0.15em;
+  }
+
+  .high-article h3 {
+    font-size: 2em;
+    top: 10em;
   }
 
   .high-right {
@@ -1303,6 +1359,7 @@ Large devices (laptops/desktops, 1024px and up)
     width: 100%;
     display: block;
     background: linear-gradient(160deg, rgba(255, 0, 0, 0.6), rgba(255, 0, 0, 0));
+    z-index: 2;
   }
 
   .logo-attached img {
