@@ -38,7 +38,7 @@ html {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #f1c40f;
+  background-color: #fd3;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: -2px;
 }
@@ -93,11 +93,10 @@ html {
   height: 28px;
 }
 
-.menu-icon div {
-  width: 100%;
-  height: 2.5px;
-  margin: 3;
-  background-color: #f42;
+.menu-icon i {
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #f42;
 }
 
 /* ====================================
@@ -125,6 +124,7 @@ Main section: Highlights
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-end;
+
   /* position: relative; */
   margin-bottom: 0;
   position: relative;
@@ -209,10 +209,8 @@ Main section: Highlights
 
 .high-article {
   display: block;
-  /* position: relative; */
   width: 100%;
   height: 100%;
-  /* margin: 0 auto; */
   position: absolute;
 }
 
@@ -226,8 +224,6 @@ Main section: Highlights
 
 .high-article-hdr {
   font-size: 2.7rem;
-  /* margin: 10px 0;
-  line-height: 1.2; */
   position: absolute;
   margin: 0;
   top: 5.5em;
@@ -237,8 +233,6 @@ Main section: Highlights
 
 .high-article-hdr-1 {
   font-size: 2.7rem;
-  /* margin: 10px 0; */
-  /* line-height: 1.2; */
   position: absolute;
   z-index: 2;
   top: 4.5em;
@@ -251,7 +245,6 @@ Main section: Highlights
   margin: 0;
   position: absolute;
   z-index: 2;
-  position: absolute;
   top: 8.5em;
   left: 0.6em;
 }
@@ -277,7 +270,9 @@ Main section: Highlights
 .high-article-small {
   display: block;
   position: relative;
+
   /* width: 97%; */
+
   /* margin: 0 auto; */
   height: 23.8em;
 }
@@ -768,7 +763,6 @@ APPS CONTAINER
 /* ========================================
 Footer
 ========================================== */
-
 .footer-cont {
   height: 25.7em;
   display: flex;
@@ -997,7 +991,6 @@ Medium devices (landscape tablets, 768px and up)
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: #f1c40f;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: -2px;
   }
@@ -1150,7 +1143,6 @@ Medium devices (landscape tablets, 768px and up)
   /* =========================================
     Funding rounds
     =========================================== */
-
   .funding-header h2 {
     margin-bottom: 0.1em;
   }
@@ -1227,7 +1219,7 @@ Medium devices (landscape tablets, 768px and up)
     display: none;
   }
 
-  /* ========================================
+  /* ===========================================
     APPS CONTAINER
     ========================================== */
   .col-sm-2 {
@@ -1243,7 +1235,6 @@ Medium devices (landscape tablets, 768px and up)
   /* ==========================================
   Footer
   ============================================ */
-
   .footer-cont {
     height: 25.7em;
     display: flex;
@@ -1390,8 +1381,7 @@ Large devices (laptops/desktops, 1024px and up)
 
   /* ========================================
     funding rounds
-    ========================================== */
-
+  ========================================== */
   .funding-header {
     display: flex;
     justify-content: space-between;
